@@ -5,6 +5,7 @@ using LSLib.LS;
 using LaughingLocale.Data.History;
 using LaughingLocale.Data.Locale;
 using LaughingLocale.ViewModel;
+using LaughingLocale.ViewModel.Locale;
 
 namespace LaughingLocale.Divinity.Data
 {
@@ -242,7 +243,7 @@ namespace LaughingLocale.Divinity.Data
 
 		private bool _initialized = false;
 
-		public HistorySnapshotAction Load(Node node, NodeAttribute ka, TranslatedString ts, bool storeHistory = false)
+		public HistorySnapshotAction Load(Node node, NodeAttribute ka, TranslatedString ts)
 		{
 			var lastKey = Key;
 			var lastContent = Content;
